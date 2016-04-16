@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- 5.10.1
+sudo: false
+deploy:
+  provider: npm
+  email: xbtsw.chen@gmail.com
+  api_key:
+    secure: DZKGLF9gSN/RAFwCAZwNX0QKj4NeM9mof71iYd1VEhYInjSSMQrOyAp/36YykMqM6HAFXJRRINKQRycs/jOgR395Bd796JMAp+VsgIqMY4fF3GYs7HkAmOtUf8av5QyaIRUL7cMUf8eG8R5wpC6Xm68vvdqHGpzYNG4j6XmH+FRL3trom8UoNjX/Qw21PQvUiA5nrDwViYLed3jEoJ9DyTa+eiF/zSUGJpE5AOZTfcEORswGI8UrF69otFXlJJ/2MdHOdQdxa20MqSNQvDqzq2u8D3I/Up6vlLbr1mqhZmGGsfI2vl7iz400SlXSJFmPrEeJGP2PAEZlfUD4cgc+MnRczSh+VNRxqhKOz5HWoxA88PnhhYER80Q4Jl2fU9bOjN15H7xgWkukZGvmZuiz9Sk+P1lAcbu5faCZTddF+VtLa5dZuxVk/OKdmzJEf114uI9Z16AS3jxJDUm/DLQc4y+9i2my9tpOHghS+G/ohBVSoxs2cwgKP+aYkJl2zjMP8F7rpu01dgvfYqLl01FDZTuzJy5gvl39BOxRMrbzu0U3elJnLK37r9vypT47pyWJ5O4n54QFl2eMcry0PjSQg3Y7K2zs+1ARKUet4MiUoLyGZJhNH6xN2xD0Xj+Ew5MvlEGypNe4hxOxHMOQIk+YVK9i8/1q/D0UCRdLcfsKS0Q=
+  on:
+    tags: true
+    repo: xbtsw/getsandbox-express
