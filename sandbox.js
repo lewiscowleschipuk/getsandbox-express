@@ -37,6 +37,10 @@ var loadSandbox = function loadSandbox(expressApp, sandboxMainPath) {
   sandbox.Sandbox = Sandbox;
   sandbox.state = {};
   sandbox.moment = require('moment-timezone');
+  sandbox._ = require('lodash');
+  sandbox.faker = require('faker');
+  sandbox.amanda = require('amanda');
+  sandbox.validator = require('validator');
 
   var script = new vm.Script(fs.readFileSync(sandboxMainPath).toString());
   script.runInNewContext(sandbox);
