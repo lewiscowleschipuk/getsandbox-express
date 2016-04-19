@@ -26,7 +26,7 @@ Sandbox.define = function define() {
 };
 
 var loadSandbox = function loadSandbox(expressApp, sandboxMainPath) {
-  if (!path.isAbsolute(sandboxMainPath)){
+  if (!path.isAbsolute(sandboxMainPath)) {
     throw new Error('sandbox main path must be absolute path');
   }
   app = expressApp;
@@ -42,7 +42,7 @@ var loadSandbox = function loadSandbox(expressApp, sandboxMainPath) {
   sandbox.amanda = require('amanda');
   sandbox.validator = require('validator');
 
-  var script = new vm.Script(fs.readFileSync(sandboxMainPath).toString());
+  var script = new vm.Script(fs.readFileSync(sandboxMainPath).toString(), {filename: sandboxMainPath});
   script.runInNewContext(sandbox);
 };
 
