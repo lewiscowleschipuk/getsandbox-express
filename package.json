@@ -1,7 +1,7 @@
 {
-  "name": "getsandbox-express",
+  "name": "@hugojosefson/getsandbox-express",
   "version": "1.0.1",
-  "description": "getsandbox-express adapter",
+  "description": "getsandbox-express adapter and cli",
   "main": "sandbox.js",
   "bin": {
     "sandbox": "cli.js"
@@ -24,14 +24,11 @@
     "start": "node cli.js",
     "test": "echo \"no test intended\" && exit 0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xbtsw/getsandbox-express.git"
-  },
+  "repository": "hugojosefson/getsandbox-express",
   "author": "xbtsw",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/xbtsw/getsandbox-express/issues"
+    "url": "https://github.com/hugojosefson/getsandbox-express/issues"
   },
-  "homepage": "https://github.com/xbtsw/getsandbox-express#readme"
+  "homepage": "https://github.com/hugojosefson/getsandbox-express#readme"
 }

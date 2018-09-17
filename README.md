@@ -1,4 +1,4 @@
-# getsandbox-express
+# @hugojosefson/getsandbox-express
 A getsandbox.com to express adapter
 
 ## Usage
@@ -6,13 +6,13 @@ A getsandbox.com to express adapter
 ### as command-line tool, without installing
 
 ```bash
-npx getsandbox-express <main.js> [<port>]
+npx @hugojosefson/getsandbox-express <main.js> [<port>]
 ```
 
 Alternatively, if you want to install it globally:
 
 ```bash
-npm install -g getsandbox-express
+npm install -g @hugojosefson/getsandbox-express
 sandbox <main.js> [<port>]
 ```
 
@@ -21,7 +21,7 @@ Default port is `8080`.
 ### as Node.js module
 
 ```js
-const sandbox = require('getsandbox-express')
+const sandbox = require('@hugojosefson/getsandbox-express')
 const express = require('express')
 
 const app = express()
