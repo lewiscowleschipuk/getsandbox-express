@@ -6,6 +6,7 @@ var morgan = require('morgan');
 
 var app;
 var Sandbox = {};
+var warnedAboutMethods = {};
 
 Sandbox.define = function define() {
   var url, verb, handler;
@@ -22,7 +23,14 @@ Sandbox.define = function define() {
   url = url.replace(/{(.+?)}/g, ":$1");
   url = encodeURI(url);
 
-  app[verb](url, handler);
+  if (typeof app[verb] === 'function') {
+    app[verb](url, handler);
+  } else {
+      if (!warnedAboutMethods[verb]) {
+          console.warn("Ignoring registration of '" + verb.toUpperCase() + "' http method, because it's not implemented in Express.js.");
+          warnedAboutMethods[verb] = true;
+      }
+  }
 };
 
 var loadSandbox = function loadSandbox(expressApp, sandboxMainPath) {
