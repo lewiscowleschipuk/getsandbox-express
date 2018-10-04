@@ -26,5 +26,9 @@ const express = require('express')
 
 const app = express()
 sandbox.loadSandbox(app, __dirname + '/mysandbox/main.js')
-app.listen(8080)
+
+const port = 8080
+app.listen(port, () => {
+  console.log(`Sandbox listening on port ${port}.`)
+})
 ```
