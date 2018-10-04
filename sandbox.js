@@ -3,6 +3,7 @@ var fs = require('fs');
 var vm = require('vm');
 var requireLike = require('require-like');
 var morgan = require('morgan');
+var attachLiquidTemplateEngine = require('./attach-liquid-template-engine');
 
 var app;
 var Sandbox = {};
@@ -39,6 +40,9 @@ var loadSandbox = function loadSandbox(expressApp, sandboxMainPath) {
   }
   app = expressApp;
   app.use(morgan('dev'));
+
+  var sandboxDir = path.dirname(sandboxMainPath);
+  attachLiquidTemplateEngine(app, sandboxDir);
 
   var sandbox = {};
   sandbox.require = requireLike(sandboxMainPath);
