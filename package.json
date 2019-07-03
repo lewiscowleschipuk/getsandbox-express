@@ -1,5 +1,5 @@
 {
-  "name": "@hugojosefson/getsandbox-express",
+  "name": "@jpereiramg/getsandbox-express",
   "version": "1.1.1",
   "description": "getsandbox-express adapter and cli",
   "main": "sandbox.js",
@@ -26,11 +26,11 @@
     "start": "node cli.js",
     "test": "echo \"no test intended\" && exit 0"
   },
-  "repository": "hugojosefson/getsandbox-express",
+  "repository": "jpereiramg/getsandbox-express",
   "author": "xbtsw",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hugojosefson/getsandbox-express/issues"
+    "url": "https://github.com/jpereiramg/getsandbox-express/issues"
   },
-  "homepage": "https://github.com/hugojosefson/getsandbox-express#readme"
+  "homepage": "https://github.com/jpereiramg/getsandbox-express#readme"
 }
