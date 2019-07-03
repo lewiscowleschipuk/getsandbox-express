@@ -1,4 +1,4 @@
-# @c-jean/getsandbox-express
+# @jpereiramg/getsandbox-express
 A getsandbox.com to express adapter
 
 ## Usage
@@ -6,13 +6,13 @@ A getsandbox.com to express adapter
 ### as command-line tool, without installing
 
 ```bash
-npx @c-jean/getsandbox-express <main.js> [<port>]
+npx @jpereiramg/getsandbox-express <main.js> [<port>]
 ```
 
 Alternatively, if you want to install it globally:
 
 ```bash
-npm install -g @c-jean/getsandbox-express
+npm install -g @jpereiramg/getsandbox-express
 sandbox <main.js> [<port>]
 ```
 
