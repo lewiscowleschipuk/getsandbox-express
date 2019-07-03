@@ -18,7 +18,8 @@
     "morgan": "^1.7.0",
     "require-like": "^0.1.2",
     "resolve": "^1.1.7",
-    "validator": "^5.2.0"
+    "validator": "^5.2.0",
+    "body-parser": "^1.19.0"
   },
   "devDependencies": {},
   "scripts": {
