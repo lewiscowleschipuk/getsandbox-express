@@ -21,7 +21,7 @@ Default port is `8080`.
 ### as Node.js module
 
 ```js
-const sandbox = require('@c-jean/getsandbox-express')
+const sandbox = require('@jpereiramg/getsandbox-express')
 const express = require('express')
 
 const app = express()
