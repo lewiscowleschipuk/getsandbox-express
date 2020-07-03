@@ -12,13 +12,13 @@ It will execute the code of the required files within a VM, getting an identical
 ### as command-line tool, without installing
 
 ```bash
-npx @jeanpereirarj/getsandbox-express <main.js> [<port>]
+npx @gridscale/getsandbox-express <main.js> [<port>]
 ```
 
 Alternatively, if you want to install it globally:
 
 ```bash
-npm install -g @jeanpereirarj/getsandbox-express
+npm install -g @gridscale/getsandbox-express
 sandbox <main.js> [<port>]
 ```
 
@@ -27,7 +27,7 @@ Default port is `8080`.
 ### as Node.js module
 
 ```js
-const sandbox = require('@jeanpereirarj/getsandbox-express')
+const sandbox = require('@gridscale/getsandbox-express')
 const express = require('express')
 
 const app = express()
