@@ -1,4 +1,4 @@
-# @jeanpereirarj/getsandbox-express
+# @gridscale/getsandbox-express
 A getsandbox.com to express adapter
 
 ## About this fork
