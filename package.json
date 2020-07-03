@@ -1,6 +1,6 @@
 {
-  "name": "@jpereiramg/getsandbox-express",
-  "version": "1.1.1",
+  "name": "@gridscale/getsandbox-express",
+  "version": "1.1.2",
   "description": "getsandbox-express adapter and cli",
   "main": "sandbox.js",
   "bin": {
@@ -16,7 +16,6 @@
     "moment": "^2.12.0",
     "moment-timezone": "^0.5.3",
     "morgan": "^1.7.0",
-    "require-like": "^0.1.2",
     "resolve": "^1.1.7",
     "validator": "^5.2.0",
     "body-parser": "^1.19.0"
@@ -26,11 +25,11 @@
     "start": "node cli.js",
     "test": "echo \"no test intended\" && exit 0"
   },
-  "repository": "jpereiramg/getsandbox-express",
+  "repository": "gridscale/getsandbox-express",
   "author": "xbtsw",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jpereiramg/getsandbox-express/issues"
+    "url": "https://github.com/gridscale/getsandbox-express/issues"
   },
-  "homepage": "https://github.com/jpereiramg/getsandbox-express#readme"
+  "homepage": "https://github.com/gridscale/getsandbox-express#readme"
 }
