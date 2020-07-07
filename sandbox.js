@@ -77,7 +77,6 @@ var loadSandbox = function loadSandbox(expressApp, sandboxMainPath, options) {
   sandbox.amanda = require('amanda');
   sandbox.validator = require('validator');
   sandbox.console = console;
-  sandbox.environmentvars = process.env;
 
   if (options.persistState === true) {
     const statefile = dirname(sandboxMainPath) + '/state.json';

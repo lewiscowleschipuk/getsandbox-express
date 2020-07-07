@@ -9,7 +9,6 @@ It will execute the code of the required files within a VM, getting an identical
 
 * `console` object is available in modules - so logging can be done
 
-* Environment variables are available in modules in variable `environmentvars`
 
 ## Usage
 
