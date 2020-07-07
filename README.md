@@ -7,6 +7,10 @@ It will execute the code of the required files within a VM, getting an identical
 
 * This fork provides the possibility to make the state persistent. Therefore a third parameter `options` is introduced to the `loadSandbox` function. Set property `persistState` to true, will create a `state.json` file next to your sandbox main script. This file will be updated with the current state every second. When restarting the sandbox, it will search for this file and try to restore the state from it's content.
 
+* `console` object is available in modules - so logging can be done
+
+* Environment variables are available in modules in variable `environmentvars`
+
 ## Usage
 
 ### as command-line tool, without installing
