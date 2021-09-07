@@ -7,6 +7,7 @@ var attachLiquidTemplateEngine = require('./attach-liquid-template-engine');
 var bodyParser = require('body-parser');
 var dirname = require('path').dirname;
 var timers = require('timers');
+var fetch = require('node-fetch');
 
 var app;
 var Sandbox = {};
@@ -76,6 +77,8 @@ var loadSandbox = function loadSandbox(expressApp, sandboxMainPath, options) {
   sandbox.faker = require('faker');
   sandbox.amanda = require('amanda');
   sandbox.validator = require('validator');
+  sandbox.fetch = fetch;
+  sandbox.Headers = fetch.Headers;
   sandbox.console = console;
 
   if (options.persistState === true) {
